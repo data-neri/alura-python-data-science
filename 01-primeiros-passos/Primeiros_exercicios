@@ -1,0 +1,145 @@
+# --- Coleta e amostragem de dados ---
+
+# 1. Imprimir "Olá, [nome]!"
+nome = input("Digite seu nome: ")
+print(f"Olá, {nome}!")
+
+# 2. Imprimir nome e idade
+nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+print(f"Olá, {nome}, você tem {idade} anos.")
+
+# 3. Imprimir nome, idade e altura
+nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+altura = input("Digite sua altura em metros: ")
+print(f"Olá, {nome}, você tem {idade} anos e mede {altura} metros!")
+
+# --- Calculadora com operadores ---
+
+# 4. Soma de dois valores
+print("\n--- Soma ---")
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+print(f"A soma é: {num1 + num2}")
+
+# 5. Soma de três valores
+print("\n--- Soma de três ---")
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
+print(f"A soma é: {num1 + num2 + num3}")
+
+# 6. Subtração
+print("\n--- Subtração ---")
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+print(f"A subtração é: {num1 - num2}")
+
+# 7. Multiplicação
+print("\n--- Multiplicação ---")
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+print(f"A multiplicação é: {num1 * num2}")
+
+# 8. Divisão
+print("\n--- Divisão ---")
+numerador = float(input("Digite o numerador: "))
+denominador = float(input("Digite o denominador (não pode ser 0): "))
+if denominador != 0:
+    print(f"A divisão é: {numerador / denominador}")
+else:
+    print("Erro: Denominador não pode ser zero.")
+
+# 9. Exponenciação
+print("\n--- Exponenciação ---")
+base = float(input("Digite a base: "))
+expoente = float(input("Digite o expoente: "))
+print(f"O resultado é: {base ** expoente}")
+
+# 10. Divisão Inteira
+print("\n--- Divisão Inteira ---")
+numerador = float(input("Digite o numerador: "))
+denominador = float(input("Digite o denominador (não pode ser 0): "))
+if denominador != 0:
+    print(f"A divisão inteira é: {numerador // denominador}")
+else:
+    print("Erro: Denominador não pode ser zero.")
+
+# 11. Resto da Divisão
+print("\n--- Resto da Divisão ---")
+numerador = float(input("Digite o numerador: "))
+denominador = float(input("Digite o denominador (não pode ser 0): "))
+if denominador != 0:
+    print(f"O resto da divisão é: {numerador % denominador}")
+else:
+    print("Erro: Denominador não pode ser zero.")
+
+# 12. Média de 3 notas
+print("\n--- Média ---")
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+media = (nota1 + nota2 + nota3) / 3
+print(f"A média é: {media:.2f}")
+
+# 13. Média Ponderada
+print("\n--- Média Ponderada ---")
+# Valores: 5, 12, 20, 15 | Pesos: 1, 2, 3, 4
+soma_valores = (5*1) + (12*2) + (20*3) + (15*4)
+soma_pesos = 1 + 2 + 3 + 4  # Isso resulta em 10
+media_pond = soma_valores / soma_pesos
+print(f"A média ponderada é: {media_pond}")
+
+# --- Editando textos ---
+
+# 1. Frase em variável
+print("\n--- Frase em variável ---")
+frase = "Aprender Python é muito legal!"
+print(frase)
+
+# 2. Solicitar frase e imprimir
+print("\n--- Solicitar frase ---")
+frase = input("Digite uma frase: ")
+print(frase)
+
+# 3. Frase em maiúsculas
+print("\n--- Maiúsculas ---")
+frase = input("Digite uma frase: ")
+print(frase.upper())
+
+# 4. Frase em minúsculas
+print("\n--- Minúsculas ---")
+frase = input("Digite uma frase: ")
+print(frase.lower())
+
+# 5. Frase sem espaços (variável)
+print("\n--- Sem espaços (variável) ---")
+frase = "   Espaços no início e fim   "
+print(f"Original: '{frase}'")
+print(f"Sem espaços: '{frase.strip()}'")
+
+# 6. Frase sem espaços (input)
+print("\n--- Sem espaços (input) ---")
+frase = input("Digite uma frase com espaços antes e depois: ")
+print(frase.strip())
+
+# 7. Sem espaços e minúscula
+print("\n--- Sem espaços e minúscula ---")
+frase = input("Digite uma frase: ")
+print(frase.strip().lower())
+
+# 8. Substituir 'e' por 'f'
+print("\n--- Substituir 'e' por 'f' ---")
+frase = input("Digite uma frase: ")
+print(frase.replace("e", "f"))
+
+# 9. Substituir 'a' por '@'
+print("\n--- Substituir 'a' por '@' ---")
+frase = input("Digite uma frase: ")
+print(frase.replace("a", "@"))
+
+# 10. Substituir 's' por '$'
+print("\n--- Substituir 's' por '$' ---")
+frase = input("Digite uma frase: ")
+print(frase.replace("s", "$"))
